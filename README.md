@@ -4,6 +4,8 @@
 
 Hoje é uma aplicação web. O plano é virar um **player físico com ESP32**.
 
+**▶ Teste online:** https://itslozhy.github.io/S.I.N.A.L---sistema-integrado-de-navega-o-de-udio-local/
+
 ![S.I.N.A.L.](docs/biblioteca.png)
 
 ## Funcionalidades
@@ -43,6 +45,9 @@ Para adicionar uma estação nova, inclua o id em `types.ts`, um item em `statio
 npm install
 npm run dev
 ```
+
+## Deploy
+Cada push na `main` dispara o workflow `.github/workflows/deploy.yml`, que roda lint e build e publica a pasta `dist/` no GitHub Pages.
 
 ## Roadmap rumo ao hardware (SINAL-32)
 O modelo de dados já pensa no aparelho físico: **cada estação corresponde a uma pasta no cartão SD** (`/grunge`, `/indie`, `/shoegaze`, `/postpunk`, `/vocaloid`).
